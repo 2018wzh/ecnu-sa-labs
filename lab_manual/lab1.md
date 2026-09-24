@@ -41,7 +41,7 @@ Inspect the Makefile to see the commands used to run <a href="https://github.com
 
 ```sh
 # Compile the program with AFL
-AFL_DONT_OPTIMIZE=1 afl-gcc c_programs/test1.c -o test1
+AFL_DONT_OPTIMIZE=1 afl-clang-fast c_programs/test1.c -o test1
 # Set kernel to dump crashes into "core" files for AFL
 echo core >/proc/sys/kernel/core_pattern
 # Run AFL for 30s on test1
