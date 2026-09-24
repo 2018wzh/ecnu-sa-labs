@@ -1,0 +1,22 @@
+clang version 22.1.8
+Target: x86_64-pc-linux-gnu
+Thread model: posix
+InstalledDir: /usr/bin
+Found candidate GCC installation: /usr/bin/../lib/gcc/x86_64-pc-linux-gnu/16
+Found candidate GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16
+Selected GCC installation: /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16
+Candidate multilib: .;@m64
+Candidate multilib: 32;@m32
+Selected multilib: .;@m64
+Found HIP installation: /opt/rocm, version 7.2.53211
+ (in-process)
+ "/usr/bin/clang-22" -cc1 -triple x86_64-pc-linux-gnu -analyze -disable-free -clear-ast-before-backend -disable-llvm-verifier -discard-value-names -main-file-name test3.c -analyzer-checker=core -analyzer-checker=apiModeling -analyzer-checker=unix -analyzer-checker=deadcode -analyzer-checker=security.insecureAPI.UncheckedReturn -analyzer-checker=security.insecureAPI.getpw -analyzer-checker=security.insecureAPI.gets -analyzer-checker=security.insecureAPI.mktemp -analyzer-checker=security.insecureAPI.mkstemp -analyzer-checker=security.insecureAPI.vfork -analyzer-checker=nullability.NullPassedToNonnull -analyzer-checker=nullability.NullReturnedFromNonnull -analyzer-output plist -w -setup-static-analyzer -mrelocation-model pic -pic-level 2 -pic-is-pie -mframe-pointer=all -fmath-errno -ffp-contract=on -fno-rounding-math -mconstructor-aliases -funwind-tables=2 -target-cpu x86-64 -tune-cpu generic -debugger-tuning=gdb -fdebug-compilation-dir=/home/wzh/ecnu-sa-labs/lab1 -v -fcoverage-compilation-dir=/home/wzh/ecnu-sa-labs/lab1 -resource-dir /usr/lib/clang/22 -internal-isystem /usr/lib/clang/22/include -internal-isystem /usr/local/include -internal-isystem /usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/../../../../x86_64-pc-linux-gnu/include -internal-externc-isystem /include -internal-externc-isystem /usr/include -ferror-limit 19 -stack-protector 2 -fgnuc-version=4.2.1 -fskip-odr-check-in-gmf -faddrsig -fdwarf2-cfi-asm -o test3.plist -x c c_programs/test3.c
+clang -cc1 version 22.1.8 based upon LLVM 22.1.8 default target x86_64-pc-linux-gnu
+ignoring nonexistent directory "/usr/bin/../lib64/gcc/x86_64-pc-linux-gnu/16/../../../../x86_64-pc-linux-gnu/include"
+ignoring nonexistent directory "/include"
+#include "..." search starts here:
+#include <...> search starts here:
+ /usr/lib/clang/22/include
+ /usr/local/include
+ /usr/include
+End of search list.
